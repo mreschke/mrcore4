@@ -1,0 +1,23 @@
+/* Master Overrides */
+#mb {
+    background-color: #fff;
+}
+#mbc {
+    margin: 0px;
+}
+
+iframe {
+    width: 100%;
+    /*-moz-box-shadow: 0px 1px 2px #ccc;
+    -webkit-box-shadow: 0px 1px 2px #ccc;
+    box-shadow: 0px 1px 2px #ccc;*/
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Master Override for Body Border */
+body {
+    overflow: hidden;
+}

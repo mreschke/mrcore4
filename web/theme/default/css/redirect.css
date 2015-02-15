@@ -1,0 +1,56 @@
+/* Search Layout */
+/* Prefix=r */
+/* o=outer, h=header, b=body, c=content, t=table, x=text */
+/* l=logo, s=search, btn=button */
+/* a=href */
+#rc {
+    margin: 0 auto;
+    /*box-shadow: 0 2px 5px 2px #ccc;
+    border: 1px solid #aaa;*/
+    border-top: 0px;
+    max-width: 1200px;
+    /*background-color: #fff;*/
+}
+#rb {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 100px 15px 100px 15px;
+    
+}
+#redirect_image {
+    /*width: 150px;*/
+}
+#redirect_message {
+    font-size: 16px;
+    font-weight: bold;
+}
+#redirect_submessage {
+    font-size: 10px;
+    font-weight: bold;
+    color: #666666;
+}
+#redirect_help {
+    font-size: 10px;
+    font-weight: bold;
+    color: green;
+    margin-top: 5px;
+}
+#redirect_url {
+    color: #E1EBF2;
+}
+#redirect_login {
+    margin-top: 10px;
+    font-size: 14px;
+    color: black;
+}
+
+/* Master Override for Body Border */
+#master_center_item {
+    padding: 0px;
+    /* uncomment for border around main body, for use with background color/image */
+    border: 0px solid #ffffff;
+    -moz-box-shadow: 0px 0px 0px #fff;
+    -webkit-box-shadow: 0px 0px 0px #fff;
+    box-shadow: 0px 0px 0px #fff;
+    background: none;
+}

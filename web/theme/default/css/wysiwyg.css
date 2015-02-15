@@ -1,0 +1,148 @@
+/*This is the CSS for the actual wysiwyg iframe*/
+body {
+    font-family: monospace;
+    margin: 0px;
+    padding: 0px;
+    color: #000000;
+    /*padding-left: 15px;*/
+    font-size: 12px;
+    /*text-shadow: 0 1px 1px rgba(0,0,0,.3);*/
+    word-wrap: break-word; /*must be break, becuase spaces are actually &nbsp, so sees as no spaces */
+    
+}
+.wysiwyg iframe {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: red;
+}    
+.wysiwyg {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: red;
+}
+
+
+/* ***** CUSTOM TAGS ***** */
+.tag_html, .tag_info, .tag_php, .tag_code, .tag_codebox, .tag_box, .tag_textbox, .tag_teaser {
+    color: blue;
+}
+.tag_files {
+	color: orange;
+	font-weight: bold;
+	border: 1px solid blue;
+	background-color: #666;
+}
+.tag_box {
+	border: 1px solid blue;
+	background-color: #eee;
+}
+.tag_box_end {
+	color: blue;
+	border: 1px solid blue;
+	background-color: #eee;
+}
+.tag_toc {
+	font-weight: bold;
+	border: 1px solid #ccc;
+}
+.tag_info {
+	color: #804000;
+	font-weight: bold;
+}
+.tag_php {
+	color: darkred;
+}
+.tag_image {
+	color: orange;
+	font-weight: bold;
+}
+.tag_link {
+	color: #0645ad;
+}
+.tag_anchor {
+	color: #0645ad;
+	font-weight: bold;
+}
+.tag_code {
+	color: black;
+	border-bottom: 2px solid green;
+	background-color: #ccc;
+}
+.tag_code_end {
+	color: black;
+	border-top: 2px solid green;
+	background-color: #ccc;
+}
+.tag_tt {
+	color: green;
+	font-weight: bold;
+}
+.tag_priv {
+	font-weight: bold;
+	color: red;
+}
+.tag_auth {
+	font-weight: bold;
+	color: #FF9900;
+}
+.tag_html_data {
+    color: #9900FF;
+}
+.tag_php_data {
+    color: red;
+}
+.tag_code_data {
+	color: green;
+}
+.tag_codebox_data {
+    color: blue;
+    font-weight: normal;
+}
+.tag_box_data {
+	color: #666666;
+}
+.tag_textbox_data {
+    color: #999999;
+    font-style: italic;
+    font-weight: bold;
+}
+.tag_teaser_data {
+}
+
+
+
+/* ***** WIKI MARKUP OVERRIDES ***** */
+.heading1, heading2, heading3, heading4, heading5, heading6, h1, h2, h3, h4, h5, h6 {
+    /*border-bottom: 1px solid #C9D7F1;*/
+	margin-top: 0px;
+	margin-bottom: 0px;
+    border-bottom: 1px solid #C9D7F1;
+    text-align: left;
+}
+
+heading1, h1 {
+    border-bottom: 3px solid black;
+    font-weight: bold;
+    /*margin-left: -15px;*/
+}
+.heading2, h2 {
+    border-bottom: 2px solid #333;
+    /*margin-left: -10px;*/
+}
+.heading3, h3 {
+    border-bottom: 1px solid #666;
+    /*margin-left: -5px;*/
+}
+/*
+.heading4, h4 {
+    border-bottom: 1px solid #C9D7F1;
+}
+.heading5, h5 {
+    border-bottom: 1px solid #C9D7F1;
+}
+.heading6, h6 {
+    border-bottom: 1px solid #C9D7F1;
+}
+*/

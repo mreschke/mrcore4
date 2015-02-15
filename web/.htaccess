@@ -1,0 +1,52 @@
+# MultiViews is how I get /topic.php/1 to be entred as /topic/1
+Options -Indexes +FollowSymLinks +MultiViews
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+
+	# Rewrite for example.com/rest to api-rest.php
+	# RewriteRule ^rest/.*$ api-rest.php?%{QUERYSTRING} [L,QSA]
+
+	# Master Controller
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^ index.php [QSA,L]
+</IfModule>
+
+#Expires Caching
+#http://stackoverflow.com/questions/5531994/specifing-expiration-date-for-static-files-caches
+#I also have caching in .htaccess files in the theme js,css,image folders
+<IfModule mod_expires.c>
+	ExpiresActive On
+	#ExpiresByType image/jpg "access 1 year"
+	#ExpiresByType image/jpeg "access 1 year"
+	#ExpiresByType image/gif "access 1 year"
+	#ExpiresByType image/png "access 1 year"
+	ExpiresByType image/x-icon "access 1 month"
+	#ExpiresByType text/css "access 1 year"
+	#ExpiresByType text/x-javascript "access 10 year"
+	ExpiresByType application/pdf "access 1 month"
+	ExpiresByType application/x-shockwave-flash "access 1 month"
+	ExpiresDefault "access 7 days"
+
+
+	#Cache-Control Headers (to help proxy servers, set cache-control to public
+	#http://www.askapache.com/htaccess/apache-speed-cache-control.html
+	<IfModule mod_headers.c>
+		# 480 weeks
+		<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+			Header append Cache-Control "public"
+		</FilesMatch>
+		
+		# 2 DAYS
+		<FilesMatch "\.(xml|txt)$">
+			Header append Cache-Control "public must-revalidate"
+		</FilesMatch>
+		
+		# 2 HOURS
+		<FilesMatch "\.(html|htm)$">
+			Header append Cache-Control "must-revalidate"
+		</FilesMatch>
+
+	</IfModule>
+</IfModule>

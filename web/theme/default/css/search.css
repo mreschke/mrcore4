@@ -1,0 +1,191 @@
+/* Search Layout */
+/* Prefix=s */
+/* o=outer, h=header, b=body, c=content, t=table, x=text */
+/* l=logo, u=user, btn=button */
+/* a=href */
+#sc {
+    margin: 0 auto;
+    box-shadow: 0 2px 5px 2px #ccc;
+    border: 1px solid #aaa;
+    border-top: 0px;
+    max-width: 1200px;
+    background-color: #fff;
+    padding-top: 1px; /* required because global puts <p> which messes up display */
+}
+.sb {
+    padding: 15px;
+}
+
+.badge_td {
+    white-space: nowrap;
+    padding: 20px 20px 10px 10px;
+    border-right: 1px solid #ccc;
+}
+
+/* Detail View */
+#search_related_badgetag_menu_item {
+    margin-top: -3px;
+    margin-left: 0px;
+}
+.search_row, .search_row_unread {
+    margin-bottom: 15px;
+    /*background-color: #E1EBF2;
+    border: 1px solid #C9D7F1;*/
+    
+    border: 1px solid #ffffff; /* keeps :hover consistant because it has 1px border
+    
+    /*border: 1px solid #C9D7F1;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    background: #ffffff url('../images/form_bg.jpg') top left repeat-x;*/
+}
+.search_row_alt, .search_row_alt_unread {
+    margin-bottom: 15px;
+    /*background-color: #ECF3F7;
+    border: 1px solid #C9D7F1;*/
+    
+    border: 1px solid #ffffff; /* keeps :hover consistant because it has 1px border
+    
+    /*border: 1px solid #C9D7F1;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    background: #ffffff url('../images/form_bg.jpg') top left repeat-x;*/
+}
+.search_row_alt:hover, .search_row:hover {
+    border: 1px solid #C9D7F1;
+    -moz-box-shadow: 0px 1px 2px #ccc;
+    -webkit-box-shadow: 0px 1px 2px #ccc;
+    box-shadow: 0px 1px 2px #ccc;
+    background: #ffffff url('../images/form_bg.jpg') top left repeat-x;
+}
+.search_row_unread, .search_row_alt_unread {
+    border: 2px solid #888888;
+}
+.search_left {
+    padding: 5px;
+}
+.search_badge_item {
+    margin-bottom: 5px;
+}
+.search_badge_text {
+    margin-bottom: 5px;    
+}
+.search_center {
+    padding: 5px;
+}
+.search_title, .search_title_deleted, .search_title_unread {
+    font-size: 16px;
+    font-weight: bold;
+}
+.search_center_tags {
+}
+.search_title a {
+    /*color: #105289;*/
+    color: #0645ad;
+    
+}
+.search_title_unread a[href ^="http://"] {
+    color: #105289;
+    background: url('../images/unread.png') center right no-repeat;
+    padding-right: 25px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+}
+.search_unread_imageX {
+    width: 20px;
+}
+.search_title_deleted a {
+    color: red;
+}
+.search_subtitle {
+    color: #666666;
+    font-size: 10px;    
+}
+.search_teaser {
+    margin-top: 5px;
+}
+.search_teaser_unread {
+    font-weight: bold;
+}
+.search_tags {
+    /*font-size: 10px;*/
+}
+.search_tag_link {
+    padding-right: 5px;
+    font-weight: normal;
+}
+.search_right {
+    display: block;
+    /*border-left: 1px solid #C9D7F1;*/
+    padding: 5px;
+    color: #666666;
+    font-size: 10px;    
+}
+.search_updated {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.search_counts {
+    margin-top: 5px;
+}
+.search_permissions {
+    margin-top: 5px;
+    line-height: 10px;
+}
+.search_perm_group_public {
+    font-size: 10px;
+    color: green;
+    font-weight: bold;
+}
+.search_perm_group {
+    font-size: 10px;
+    color: #8B008B;
+    font-weight: bold;
+}
+.search_perm_short {
+    font-size: 10px;
+}
+.search_perm_private {
+    font-size: 10px;
+    color: red;
+    font-weight: bold;
+}
+.search_pager {
+    /*margin-bottom: 10px;
+    font-size: 18px;
+    height: 21px;*/
+}
+.search_pager a {
+    color: green;
+    font-weight: bold;
+}
+.search_pager_next_a {
+    float: right;
+    margin-right: 20px;
+}
+.search_pager_previous_a {
+    margin-left: 20px;
+}
+#search_badge_topic_body {
+    border-bottom: 1px solid #ccc;
+    /*-moz-box-shadow: 0px 1px 2px #ccc;
+    -webkit-box-shadow: 0px 1px 2px #ccc;
+    box-shadow: 0px 1px 2px #ccc;
+    background: #ffffff url('../images/form_bg.jpg') top left repeat-x;
+    padding: 5px;*/
+    margin-bottom: 20px;
+}
+#topic_content {
+    margin: 15px;
+}
+
+
+/* List View */
+#search_list {
+    white-space: nowrap;
+}
+.datatable thead tr {
+    cursor: auto;
+}

@@ -1,0 +1,24 @@
+# Mrcore Exclusions
+/files/*
+!/files/snippets
+web/admin/indexer_log.html
+/config/config.php
+/web/image/*
+!/web/image/avatar_user1.png
+!/web/image/badge1.png
+!/web/image/tag3.png
+!/web/image/tag4.png
+!/web/image/tag5.png
+!/web/image/tag6.png
+
+# Common Exclusions
+composer.phar
+composer.lock
+vendor
+.env.*.php
+.env.php
+.local
+.DS_Store
+Thumbs.db
+.nfs*
+.swp

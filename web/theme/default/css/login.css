@@ -1,0 +1,56 @@
+#login_outer_div {
+}
+#login_div {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-color: #fff;
+    padding: 15px;
+    font-size: 12px;
+    
+    /*background: #ffffff url('../images/form_bg.jpg') top left repeat-x;
+    border: 1px solid #C9D7F1;
+    -moz-box-shadow: 5px 5px 5px #ccc;
+    -webkit-box-shadow: 5px 5px 5px #ccc;
+    box-shadow: 5px 5px 5px #ccc;*/
+
+    border: 1px solid #ddd;
+
+    -webkit-box-shadow: 2px 2px 3px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    2px 2px 3px rgba(50, 50, 50, 0.75);
+    box-shadow:         2px 2px 3px rgba(50, 50, 50, 0.75);
+
+}
+#login_username_text {
+    width: 250px;
+}
+#login_password_text {
+    width: 250px;
+}
+#login_submit {
+    margin-top: 15px;
+}
+.message_div {
+    margin-top: 10px;
+}
+.message {
+    color: red;
+    font-weight: bold;
+}
+
+/* Master Override for Body Border */
+#m_center_header {
+    display: none;
+}
+#m_center_div {
+/*#m_center_item {*/
+    padding: 0px;
+    
+    /* uncomment for border around main body, for use with background color/image */
+    border: 0px solid #ffffff;
+    -moz-box-shadow: 0px 0px 0px #fff;
+    -webkit-box-shadow: 0px 0px 0px #fff;
+    box-shadow: 0px 0px 0px #fff;
+    background: none;
+}

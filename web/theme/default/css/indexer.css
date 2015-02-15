@@ -1,0 +1,17 @@
+body {
+    font-family: monospace;
+    margin: 5px;
+    font-size: 12px;
+}
+#indexer_outer_div {
+    padding: 5px;
+}
+.indexer_header {
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 1px solid red;
+}
+.indexer_items {
+    margin-bottom: 20px;
+
+}

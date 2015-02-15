@@ -1,0 +1,313 @@
+/* Master Overrides */
+#mb {
+    /*background-color: #f6f6f6;*/
+}
+#mbc {
+    margin-bottom: 15px;
+
+}
+
+
+
+/* Files Override */
+/*.files_outer_borderXXXXXXXx {
+    border: 0px;
+    background: none;
+}*/
+
+
+
+/* Topic Body Layout */
+/* Prefix=t
+/* o=outer, h=header, b=body, c=content, t=table, x=text */
+/* l=logo, u=user, s=search, btn=button, com=comments */
+/* a=href m=menu */
+#tc {
+}
+#tb {
+    margin: 0 auto;
+    border-top: 0px;
+    max-width: 1200px;
+}
+#tbh {
+    box-shadow: 0 2px 5px 2px #ccc;
+    border: 1px solid #aaa;
+    border-bottom: 0px;
+    border-top: 0px;
+    background-color: #fff;
+    z-index: 1;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 15px 10px 15px;
+}
+#tbt {
+    box-shadow: 0 2px 5px 2px #ccc;
+    border: 1px solid #aaa;
+    border-top: 0px;
+    background-color: #fff;
+    width: 100%;
+    z-index: 999;
+}
+#ttitle {
+    color: #444;
+    font-weight: bold;
+    font-size: 22px;
+}
+.deleted {
+    color: red;
+}
+#tm {
+    float: right;
+    margin-top: -5px;
+}
+.tmb {
+    /* google calls .T-I */
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    line-height: 28px;
+    height: 28px;
+    min-width: 50px;
+    color: #444;
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    float: left;
+    padding: 0px 5px 0px 0px;
+}
+.tmb:hover {
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    border-color: #c6c6c6;
+    cursor: default;
+}
+.tmbleft {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.tmbcenter {
+    border-radius: 0;
+    border-left: 0px;
+    border-right: 0px;
+}
+.tmbright {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.tmbdropdownimg {
+    width: 100%;
+    height: 28px;
+    background: url('../images/dropdown.png') right 12px no-repeat;
+    margin-right: 25px;
+    
+}
+.tmbdropdown {
+    position: absolute;
+    background-color: #ffffff;
+    text-align: left;
+    padding: 10px;
+    display: block;
+    border: 1px solid #aaa;
+    box-shadow: 2px 2px 4px #ccc;
+    margin-top: 1px;
+    line-height: 22px;
+    z-index: 9999;
+    display: none;
+}
+.tmbdropdown, .tmbdropdown a {
+    color: #666;
+    font-size: 11px;
+    font-weight: none;
+}
+#tmbedit {}
+#tmbbackup {
+    border-left: 0px;
+}
+#tmbundelete {}
+#tmbdelete {}
+#tmbinfo {
+    margin-left: 15px;
+}
+#tmbinfoc {}
+#tmbfolder {
+    border-left: 0px;
+}
+#tmbfolderimg {
+    background: url('../images/folder.png') 16px 6px no-repeat;
+}
+#tmbfolderc {
+    position: absolute;
+    right: 45px;
+    width: 80%;
+    max-width: 1200px;
+    border: 1px solid #aaa;
+    box-shadow: 2px 2px 4px #ccc;
+    background-color: #ffffff;
+    display: none;
+}
+#tmbfolderb {
+    padding: 15px;
+}
+
+
+
+
+
+
+.tsubtitle {
+    /*margin-left: -15px;*/
+}
+.tsubtitle, .tsubtitle table {
+    color: #666666;
+    font-size: 10px;
+}
+#tbwiki {
+    margin: 15px 15px 15px 15px;
+}
+.tbadges {
+    margin-right: 10px;
+}
+.ttags {
+    display: block;
+    /*margin-bottom: 50px;*/
+    padding-top: 0px;
+    padding-bottom: 5px;
+    /*margin-left: -15px;*/
+    font-size: 10px;
+}
+.ttag {
+    padding-right: 5px;
+}
+#tlock_message {
+    position: absolute;
+    color: red;
+    font-weight: bold;
+    font-size: 11px;
+    margin-top: -4px;
+}
+.ttagimages {
+    /*float: right;
+    margin-top: 5px;*/
+    margin-right: 5px;
+}
+.tdetails {
+    color: #666666;
+    font-size: 10px;
+    line-height: 10px;
+    white-space: nowrap;
+    text-align: center;
+}
+#tdetails a {
+    font-size: 10px;
+}
+.tdetailsperms {
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #999999;
+    border-bottom: 1px solid #eeeeee;
+}
+.tperm_group_public {
+    font-size: 10px;
+    color: green;
+    font-weight: bold;
+}
+.tperm_group {
+    font-size: 10px;
+    color: #8B008B;
+    font-weight: bold;
+}
+.tperm_short {
+    font-size: 10px;
+}
+.tperm_private {
+    font-size: 10px;
+    color: red;
+    font-weight: bold;
+}
+/* ?????????? */
+#topic_deleted_header {
+    color: red;
+}
+
+
+
+/* Topic Comments Layout */
+#tcom {
+    margin: 0 auto;
+    margin-top: 15px;
+    max-width: 1200px;
+}
+.tcomadd {
+    /*border-top: 1px solid #eeeeee;*/
+}
+.tcomb {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: #E1EBF2;
+    border: 1px solid #C9D7F1;
+    padding: 15px 15px 5px 15px;
+}
+.tcombalt {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: #ECF3F7;
+    border: 1px solid #C9D7F1;
+    padding: 15px 15px 5px 15px;
+
+}
+.tcomtitle  {
+    color: #105289;
+    font-size: 16px;
+    font-weight: bold;
+}
+.tcomsubtitle {
+    color: #666666;
+    font-size: 10px;
+}
+.tcomc {
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+.tcomabout {
+    border-left: 1px solid #C9D7F1;
+    padding: 2px;
+}
+.tcomuserstats {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #666666;
+    font-size: 10px;
+}
+.tcomcontrols {
+    margin-top: 10px;
+}
+.tcomcontrols a {
+    font-size: 10px;
+}
+.tcomtopleft {
+    margin-top: -5px;
+}
+.tcomtopright {
+    float: right;
+    margin-top: -5px;
+}
+
+
+/* Topic Footer Layout */
+#tfoot {
+    width: 100%;
+    margin-top: 10px;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    background-color: #ffffff;
+}
+#tfootc {
+    padding: 15px;
+}
+#tfoottitle {
+    color: #666;
+    font-weight: bold;
+    font-size: 14px;
+}

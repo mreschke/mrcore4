@@ -1,0 +1,363 @@
+/* Search Layout */
+/* Prefix=f */
+/* o=outer, h=header, b=body, c=content, t=table, x=text */
+/* l=logo, u=user, btn=button */
+/* a=href */
+
+/*.files_outer_div {*/
+.fc {
+    /*margin-top: 5px;*/
+    /*margin: 0px; padding: 0px;*/
+
+    /* CAREFULL HERE because of how it looks embedded*/
+
+
+}
+.fcfull {
+    /* This only visible if NOT embedded */
+    margin: 0 auto;
+    max-width: 1200px;
+    box-shadow: 0 2px 5px 2px #ccc;
+    border: 1px solid #aaa;
+    border-top: 0px;
+    background-color: #fff;
+}
+.fb {
+
+}
+.fbfull {
+    /* This only visible if NOT embedded */
+    padding: 15px;
+}
+
+
+.files_outer_border {
+    border: 1px solid #C9D7F1;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    background-image: url('../images/form_bg.jpg');
+    background-repeat: repeat-x;
+    background-position: top;
+    background-color: #ffffff;
+}
+/* ***** NAV ***** */
+.files_nav {
+	padding: 2px;
+	padding-left: 9px;
+	border-bottom: 1px solid #C9D7F1;
+	background-color: #eeeeee;
+}
+/* override text size of left menu file manager */
+.m_left_line #files_nav {
+    font-size: 9px;
+}
+.files_nav a {}
+#files_full {
+    margin-top: 1px;
+    cursor: pointer;
+    float: right;
+    width: 12px;
+    height: 12px;
+    background: url('../images/newwindow.png') top left no-repeat;
+}
+/* ***** ACTUAL FILES DIV ***** */
+#files_div {
+    padding: 5px;
+	overflow: hidden;
+}
+
+
+
+/* ***** MENU BAR ***** */
+.files_menu_div {
+    /*border-bottom: 1px solid #6B90DA;*/
+    border-bottom: 1px solid #C9D7F1;
+    margin-bottom: 0px;
+}
+.table #files_menu_table td { /*css override from master.css .table because of embed*/
+    padding: 0px;
+}
+#files_menu_table {
+    border-spacing: 3px;
+}
+#files_menu_table td {
+    /*padding-right: 10px;*/
+}
+.files_menu {
+    background-color: #ffffff;
+    /*border: 2px outset #6B90DA;*/
+    border: 1px solid #C9D7F1;
+    border-top: 0px;
+    -moz-box-shadow: 2px 2px 3px #666666;
+    -webkit-box-shadow: 2px 2px 3px #666666;
+    box-shadow: 2px 2px 3px #666666;
+}
+.files_menu_item {
+    color: #0645ad;
+    cursor: pointer;
+    padding: 5px;
+}
+.files_menu_txt {
+    padding: 3px;
+}
+.files_menu_item:hover {
+    text-decoration: underline;
+    background-color: #E5ECF9;
+}
+.files_menu_separator {
+    border-bottom: 1px solid #eeeeee;
+}
+.files_menu_file, .files_menu_edit, .files_menu_view {
+    display: none;
+    position: absolute;
+    width: 200px;
+    margin-top: 4px;
+}
+/* *****-***** */
+
+
+
+/* ***** FILES CONTEXT MENU ***** */
+#files_context_menu {
+    position: absolute;
+    display: none;
+    background-color: #ffffff;
+    border: 1px solid #C9D7F1;
+    width: 200px;
+    color: #51A4AF;
+    background-image: url('../images/form_bg.jpg');
+    background-repeat: repeat-x;
+    -moz-box-shadow: 2px 2px 3px #666666;
+    -webkit-box-shadow: 2px 2px 3px #666666;
+    box-shadow: 2px 2px 3px #666666;
+    overflow: hidden;
+}
+
+/* ***** FOLDER CONTEXT MENU ***** */
+#folder_context_menu {
+    position: absolute;
+    display: none;
+    background-color: #ffffff;
+    border: 1px solid #C9D7F1;
+    width: 200px;
+    color: #51A4AF;
+    background-image: url('../images/form_bg.jpg');
+    background-repeat: repeat-x;
+    -moz-box-shadow: 2px 2px 3px #666666;
+    -webkit-box-shadow: 2px 2px 3px #666666;
+    box-shadow: 2px 2px 3px #666666;
+    overflow: hidden;
+}
+#folder_context_openurl, #files_context_openurl {
+    text-decoration: none;
+}
+#files_copyurl, #files_copyurl a:hover {
+    font-size: 10px;
+    color: #999;
+    text-decoration: none;
+    line-height: 8px;
+}
+
+
+/* ***** FILES RENAME DIGLOG ***** */
+#files_rename {
+    position: absolute;
+    display: none;
+    background-color: #ffffff;
+    border: 1px solid #C9D7F1;
+    font-weight: bold;
+    background-image: url('../images/form_bg.jpg');
+    background-repeat: repeat-x;
+    -moz-box-shadow: 2px 2px 3px #666666;
+    -webkit-box-shadow: 2px 2px 3px #666666;
+    box-shadow: 2px 2px 3px #666666;
+    padding: 5px;
+}
+#files_rename_text {
+    width: 250px;
+}
+#btn_rename {
+    margin-top: 5px;
+}
+#btn_rename_cancel {
+    margin-top: 5px;
+    float: right;
+}
+
+/* ***** NEW FOLDER DIGLOG ***** */
+.files_newfolder {
+    position: absolute;
+    display: none;
+    background-color: #ffffff;
+    border: 1px solid #C9D7F1;
+    font-weight: bold;
+    background-image: url('../images/form_bg.jpg');
+    background-repeat: repeat-x;
+    -moz-box-shadow: 2px 2px 3px #666666;
+    -webkit-box-shadow: 2px 2px 3px #666666;
+    box-shadow: 2px 2px 3px #666666;
+    padding: 5px;
+}
+.files_newfolder_text {
+    width: 250px;
+}
+#btn_newfolder {
+    margin-top: 5px;
+}
+#btn_newfolder_cancel {
+    margin-top: 5px;
+    float: right;
+}
+
+
+/* ***** NEW FOLDER DIGLOG ***** */
+.files_newfile {
+    position: absolute;
+    display: none;
+    background-color: #ffffff;
+    border: 1px solid #C9D7F1;
+    font-weight: bold;
+    background-image: url('../images/form_bg.jpg');
+    background-repeat: repeat-x;
+    -moz-box-shadow: 2px 2px 3px #666666;
+    -webkit-box-shadow: 2px 2px 3px #666666;
+    box-shadow: 2px 2px 3px #666666;
+    padding: 5px;
+}
+.files_newfile_text {
+    width: 250px;
+}
+#btn_newfile {
+    margin-top: 5px;
+}
+#btn_newfile_cancel {
+    margin-top: 5px;
+    float: right;
+}
+
+
+
+
+
+/* ***** ICON VIEW ***** */
+.files_icon_table {
+}
+.files_iconview_div {
+    /*background-color: red;*/
+    float: left;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    padding: 0px;
+    width: 100px;
+    height: 100px;
+    word-wrap: break-word;
+    overflow: hidden;
+   
+}
+.files_iconview_icon {
+    /*background-color: blue;*/
+    text-align: center;
+    height: 50px;
+	cursor: pointer;
+}
+.files_iconview_filename {
+    text-align: center;
+    font-size: 10px;
+}
+.files_icon_thumbnail {
+    height: 50px;
+}
+.files_attr {
+    font-size: 9px;
+}
+/* *****-***** */
+
+
+/* ***** Preview VIEW ***** */
+.files_preview_table {
+}
+.files_previewview_div {
+    /*background-color: red;*/
+    float: left;
+    margin-left: 5px;
+    margin-bottom: 1px;
+    padding: 0px;
+    width: 250px;
+    height: 250px;
+    word-wrap: break-word;
+    overflow: hidden;
+   
+}
+.files_previewview_icon {
+    /*background-color: blue;*/
+    text-align: center;
+    height: 200px;
+	cursor: pointer;
+}
+.files_previewview_filename {
+    text-align: center;
+    font-size: 10px;
+}
+.files_preview_thumbnail {
+    height: 200px;
+}
+.files_attr {
+    font-size: 9px;
+}
+/* *****-***** */
+
+
+
+
+
+
+/* ***** DETAIL VIEW ***** */
+.files_detail_table {
+    margin-top: 5px;
+    border-spacing: 0px;
+}
+/* override text size of left menu file manager */
+.m_left_line .files_detail_table {
+    font-size: 9px;
+    white-space: nowrap;
+
+}
+.files_detail_table td {
+    padding-right: 5px;
+    padding-bottom: 3px;
+}
+.files_detail_table td img {
+    cursor: pointer;
+}
+.files_th_tr {
+    
+}
+.files_th_tr td {
+    border-bottom: 1px solid #cccccc;
+    font-weight: bold;
+    text-align: left; 
+}
+.files_detail_thumbnail {
+    height: 25px;
+}
+.files_row {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    /*background-color: #E1EBF2;*/
+    border: 1px solid #C9D7F1;
+}
+.files_row_alt {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    /*background-color: #ECF3F7;*/
+    background-color: #f7f7f7;
+    border: 1px solid #C9D7F1;
+}
+.files_row:hover, .files_row_alt:hover {
+    background-color: #ECF3F7;
+}
+/* *****-***** */
+
+
+

@@ -1,0 +1,17 @@
+/* Master Overrides */
+body {
+	background-color: #ffffff;
+}
+
+/* Topic Overrides */
+#tbwiki {
+	/*margin: 0px;*/
+}
+
+/* Master Simple View Mode */
+#tbwiki_simple {
+	margin: 5px;
+}
+.info {
+	margin-right: 0px;
+}

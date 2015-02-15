@@ -1,0 +1,12 @@
+/* This CSS is loaded with filemanager is in full mode (not embedded) */
+
+/* Master Override for Body Border */
+#master_center_item {
+    padding: 0px;
+    /* uncomment for border around main body, for use with background color/image */
+    border: 0px solid #ffffff;
+    -moz-box-shadow: 0px 0px 0px #fff;
+    -webkit-box-shadow: 0px 0px 0px #fff;
+    box-shadow: 0px 0px 0px #fff;
+    background: none;
+}

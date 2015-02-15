@@ -1,0 +1,67 @@
+/* Search Layout */
+/* Prefix=p */
+/* o=outer, h=header, b=body, c=content, t=table, x=text */
+/* l=logo, btn=button */
+/* a=href */
+#pc {
+    margin: 0 auto;
+    box-shadow: 0 2px 5px 2px #ccc;
+    border: 1px solid #aaa;
+    border-top: 0px;
+    max-width: 1200px;
+    background-color: #fff;
+}
+#pb {
+    padding: 15px;
+}
+#subnavc {
+    margin-bottom: 10px;
+}
+.subnava {
+    margin-right: 20px;
+}
+.profile_table {
+    border-spacing: 5px;
+}
+.profile_table .thl {
+    text-align: right;
+    width: 70px;
+}
+.profile_table .thr {
+    text-align: right;
+    width: 90px;
+}
+.profile_table input[type="text"], .profile_table input[type="password"] {
+    width: 300px;
+}
+.profile_table select {
+    width: 302px;
+}
+.td {
+    width: 300px;
+}
+.profile_table_avatar_td {
+    width: 80px;
+}
+.spacer_td {
+    width: 80px;
+}
+.profile_table a[href ^="mailto:"], .aSummary a[href ^="mailto:"] {
+	background: url('../images/mailto.gif') center right no-repeat;
+	padding-right: 18px;
+}
+#profile_created_by_select {
+    height: 24px;
+}
+#profile_perm_group_table {
+    border-spacing: 5px;
+}
+.profile_perm_group {
+    font-weight: bold;
+}
+.profile_perm_group_description {
+    font-size: 10px;
+}
+#profile_upload_avatar_div {
+    display: none;
+}

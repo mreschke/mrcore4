@@ -1,0 +1,410 @@
+/* Main outer div */
+.dataTables_wrapper {
+/* temp override because dataTables_columns_button_div pushes entire body down */
+    /*margin-top: 20px;*/
+}
+
+.dataTables_columns_button_div {
+    position: relative;
+    z-index: 999;
+    width: 50px;
+    float: left;
+    margin-right: 15px;
+}
+.dataTables_export_button_div {
+    position: relative;
+    z-index: 999;
+    width: 50px;
+    float: left;
+    margin-right: 5px;
+}
+.dataTables_clearfilters_div {
+    position: relative;
+    z-index: 999;
+    width: 77px;
+    float: left;
+    margin-right: 5px;
+}
+
+.dataTables_processing {
+    position: fixed;
+    top: 150px;
+    left: 50%;
+    width: 250px;
+    height: 50px;
+    margin-left: -125px;
+    padding: 5px 0 2px 0;
+    border: 1px solid #eef0f9;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    background: #ffffff url('../images/ajax-loader.gif') center 20px no-repeat;
+    border: 2px solid #4d90fe;
+    z-index: 9999;
+}
+
+
+/* Main table, does not include pager or info */
+.datatable {
+    margin-top: 5px;
+    border: 1px solid #bbb;
+    border-right: 1px solid #4d90fe;
+    box-shadow: 0px 1px 2px #ccc;       
+}
+.dataTables_scroll {
+    margin-top: 5px;    
+}
+.dataTables_scrollHead {
+}
+
+/* Datatables Page Size */
+.dataTables_length {
+    float: left;
+    margin-right: 5px;
+}
+.dataTables_length select {
+}
+
+/* Datatables main filter textbox */
+.dataTables_filter {
+    /*float: left;*/
+}
+.dataTables_filter input {
+}
+
+/* Showing x of x records */
+.dataTables_info { 
+    color: #666666;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+
+/* ***** Datatables Header ***** */
+.datatable thead tr th {
+    border-right: 1px solid #bbb;
+    border-bottom: 1px solid #4d90fe;
+    /*background-color: #f6f6f6;*/
+    
+    padding: 4px;
+    text-align: center;
+    box-shadow: 0px 1px 2px #ccc;       
+    cursor: default;
+}
+.datatable thead tr {
+    background-image: url('../images/form_bg.jpg');
+    background-repeat: repeat-x;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+
+
+/* ***** Datatables Footer ***** */
+.datatable tfoot tr {
+}
+.datatable tfoot tr th {
+    padding: 0px;
+    border-top: 1px solid #4d90fe;
+    text-align: left
+}
+.datatable tfoot tr th input {
+    width: 100%;
+    border: 0px;
+    text-shadow: 0 1px 1px rgba(0,0,0,0);
+    border: 0px;
+    color: #666666;
+}
+.datatable tfoot tr th input:hover, .datatable tfoot tr th input:focus {
+    border: 0px;
+    background-image: url('../images/blue_bg.png');
+}
+.datatable tfoot tr th div {
+    font-size: 9px;
+    color: #000000;
+    font-weight: bold;
+}
+
+
+/* ***** DataTables Sorting ***** */
+.sorting_asc {
+    background: url('../images/sort_asc.png') no-repeat center right;
+}
+.sorting_desc {
+    background: url('../images/sort_desc.png') no-repeat center right;
+}
+.sorting {
+    background: url('../images/sort_both.png') no-repeat center right;
+}
+sorting_asc_disabled {
+    background: url('../images/sort_asc_disabled.png') no-repeat center right;
+}
+sorting_desc_disabled {
+    background: url('../images/sort_desc_disabled.png') no-repeat center right;
+}
+
+
+
+/* ***** Datatables Paging ***** */
+.dataTables_paginate {
+}
+.paging_full_numbers {
+    width: 400px;
+    height: 22px;
+    line-height: 22px;
+}
+.paginate_button, .paginate_active {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    background-image: url('../images/form_bg.jpg');
+    background-repeat: repeat-x;
+    background-position: top;
+    box-shadow: 0px 1px 2px #ccc;
+    font-size: 11px;
+    font-family:  arial, sans-serif, sans, FreeSans;
+    padding: 2px 5px;
+    margin: 0 3px;    
+    cursor: default;
+    text-align: center;
+    color: #333;
+}
+.paginate_active {
+    border: 1px solid #bbb;
+    font-weight: bold;
+    color: blue;
+}
+.paginate_button:hover, .paginate_active:hover {
+    border: 1px solid #4d90fe;
+    cursor: default;
+    text-decoration: none;
+    color: #333
+    /*background-image: url('../images/blue_bg.png');*/
+}
+.paginate_button_disabled {
+    color: #ccc;
+    cursor: default;
+}
+.paginate_button_disabled:hover {
+    border: 1px solid #ddd;
+    color: #ccc;
+    text-decoration: none;
+}
+
+
+
+/* ***** Datatables Rows ***** */
+.datatable tr.odd {
+    background-color: #ffffff;
+}
+.datatable tr.even {
+    background-color: #f6f6f6;
+}
+.datatable tr.odd:hover, .datatable tr.even:hover {
+    /*background-color: #E4F1C9;*/
+    /*background-color: #eef0f9;*/
+    background-color: #ddd;
+}
+
+
+/* ***** Datatables Columns ***** */
+.datatable tbody td {
+    min-width: 40px;
+    padding: 2px;
+    /*vertical-align: top;*/
+    /*white-space: nowrap;*/
+    border-bottom: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+}
+.datatable tbody td .total {
+    color: #8DC342;
+    font-size: 11px;
+    font-weight: bold;
+    font-style: italic;
+}
+.datatable tbody td .yes {
+    color: #8DC342;
+    font-size: 11px;
+    font-weight: bold;
+    font-style: italic;
+}
+.datatable tbody td .no {
+    color: #888888;
+    font-size: 11px;
+    font-weight: bold;
+    font-style: italic;
+}
+.datatable tbody td .na {
+    color: #444444; 
+    font-size: 11px;
+    font-weight: bold;
+    font-style: italic;
+}
+.datatable tfoot th div {
+    /* the footer total numbers */
+    color: #666666;
+}
+
+
+
+
+/* ***** ColVis ***** */
+.TableTools {
+    /*float: right;
+    margin-bottom: 1em;*/
+}
+.TableTools_Button {
+    position: relative;
+    float: left;
+    margin-right: 3px;
+    padding: 3px 5px;
+    height: 24px;
+    background-color: #fff;
+    border: 1px solid #d0d0d0;
+    cursor: pointer;
+    *cursor: hand;
+}
+button.TableTools_Button::-moz-focus-inner { 
+    border: none !important;
+    padding: 0;
+}
+.TableTools_text_hover {
+    border: 1px solid #999;
+    background-color: #f0f0f0;
+}
+div.TableTools_collectionBackground {
+    background-color: black;
+    z-index: 1100;
+}
+div.TableTools_collection {
+    position: relative;
+    width: 150px;
+    background-color: #f3f3f3;
+    padding: 3px;
+    border: 1px solid #ccc;
+    z-index: 1102;
+}
+div.TableTools_collection button.TableTools_Button {
+    background-color: white;
+    width: 100%;
+    float: none;
+    margin-bottom: 2px;
+}
+div.TableTools_catcher {
+    position: absolute;
+    z-index: 1101;
+}
+.disabled {
+    color: #999;
+}
+button.ColVis_Button {
+    text-align: left;
+}
+div.ColVis_collection button.ColVis_Button:hover {
+    border: 1px solid #999;
+    background-color: #f0f0f0;
+}
+span.ColVis_radio {
+    display: inline-block;
+    width: 20px;
+}
+
+
+
+
+
+/* ***** Table Tools Export Buttons ***** */
+div.DTTT_container {
+
+}
+
+button.DTTT_button {
+    position: relative;
+    float: left;
+    height: 24px;
+    margin-right: 3px;
+    padding: 3px 5px;
+    border: 1px solid #cccccc;
+    background-color: #fff;
+    cursor: pointer;
+    cursor: hand;
+    box-shadow: 0 1px 2px rgba(0,0,0,0);    
+}
+
+button.DTTT_button::-moz-focus-inner { 
+    border: none !important;
+    padding: 0;
+}
+
+
+/*
+ * BUTTON_STYLES
+ * Action specific button styles
+ */
+
+button.DTTT_button_csv {
+    padding-right: 30px;
+    background: url(../images/csv.png) no-repeat center right;
+}
+
+button.DTTT_button_csv_hover {
+    padding-right: 30px;
+    border: 1px solid #999;
+    background: #f0f0f0 url(../images/csv_hover.png) no-repeat center right;
+}
+
+
+button.DTTT_button_xls {
+    padding-right: 30px;
+    background: url(../images/xls.png) no-repeat center right;
+}
+
+button.DTTT_button_xls_hover {
+    padding-right: 30px;
+    border: 1px solid #999;
+    background: #f0f0f0 url(../images/xls_hover.png) no-repeat center right;
+}
+
+
+button.DTTT_button_copy {
+    padding-right: 30px;
+    background: url(../images/copy.png) no-repeat center right;
+}
+
+button.DTTT_button_copy_hover {
+    padding-right: 30px;
+    border: 1px solid #999;
+    background: #f0f0f0 url(../images/copy_hover.png) no-repeat center right;
+}
+
+
+button.DTTT_button_pdf {
+    padding-right: 30px;
+    background: url(../images/pdf.png) no-repeat center right;
+}
+
+button.DTTT_button_pdf_hover {
+    padding-right: 30px;
+    border: 1px solid #999;
+    background: #f0f0f0 url(../images/pdf_hover.png) no-repeat center right;
+}
+
+
+button.DTTT_button_print {
+    padding-right: 30px;
+    background: url(../images/print.png) no-repeat center right;
+}
+
+button.DTTT_button_print_hover {
+    padding-right: 30px;
+    border: 1px solid #999;
+    background: #f0f0f0 url(../images/print_hover.png) no-repeat center right;
+}
+
+/* Custom Columns */
+#table_cols {
+    border: 1px solid #ccc;
+    border-bottom: 0px;
+}
+#table_cols td {
+    border-bottom: 1px solid #ccc;
+}

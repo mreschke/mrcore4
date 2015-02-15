@@ -1,0 +1,494 @@
+/* ************************************************************************************************ */
+/*                                      Text_WIKI Parser CSS                                        */
+/* ************************************************************************************************ */
+
+/* *********************************** */
+/* URL/Wiki Linking                    */
+/* *********************************** */
+.urlLink {
+	color: #0645ad;
+}
+.urlLink:visited {
+	color: #0645ad;
+}
+.urlLink:hover {
+	text-decoration: underline;
+	/*color: #6b3c19;*/
+}
+#toc a {
+	/* #0645ad; wikipedia link colurs */
+	color: #0645ad;
+	text-decoration: none;	
+}
+#toc a:visited {
+	color: #0645ad;
+	text-decoration: none;
+}
+#toc a:hover {
+	/*color: #6b3c19; the brown*/
+	color: #0645ad;
+	text-decoration: underline;
+}
+
+.wikiLink {
+	text-decoration: none;
+	color: #0645ad
+}
+/*.wikiLink:visited {
+text-decoration: none;
+/* color: #6b3c19; this one is the brown */
+/*}*/
+.wikiLink:hover {
+	text-decoration: underline;
+	color: #6b3c19;
+}
+
+.wikiLink_new {
+	color: #666666;
+	text-decoration: none;
+	border-bottom: #5f97d7 1px dashed;
+}
+.wikiLink_new:hover {
+	color: #5f97d7;
+}
+
+.freeLink {
+	text-decoration: none;
+	color: #0645ad
+}
+.freeLink:visited {
+	color: #0645ad
+}
+
+.freeLink:hover {
+	text-decoration: underline;
+	/*color: #6b3c19;*/
+}
+.freeLink_new {
+	color: #666666;
+	text-decoration: none;
+	border-bottom: #5f97d7 1px dashed;
+}
+.freeLink_new:hover {
+	/*color: #5f97d7;*/
+	text-decoration: none;
+}
+.freeLink_new:visited {
+	color: #666666;
+}
+
+/* temp remove newwindow.png, it makes filemanager look bad, FIXME */
+#topic_contentX a[href ^="http://"], .aSummary a[href ^="http://"] {
+	background: url('../images/newwindow.png') center right no-repeat;
+	padding-right: 12px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+}
+#topic_contentX a[href ^="https://"] {
+	background: url('../images/newwindow.png') center right no-repeat;
+	padding-right: 12px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+}
+#topic_content a[href ^="mailto:"], .aSummary a[href ^="mailto:"] {
+	background: url('../images/mailto.gif') center right no-repeat;
+	padding-right: 18px;
+}
+
+/* *********************************** */
+/* Text_Wiki TOC                       */
+/* *********************************** */
+#toc {
+	background-color: #ffffff;
+	font-weight: bold;
+	float: right;
+    /*border: 1px solid #C9D7F1;*/
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 3px #ccc;
+    /*background-image: url('../images/form_bg.jpg');*/
+    background-repeat: repeat-x;
+    background-position: top;
+    background-color: white;
+    font-size: 11px;
+}
+.toc {
+	min-width: 200px;
+	max-width: 300px; /* set same as .info width */
+}
+.info #toc {
+	min-width: 99%;
+}
+.tocItems {
+	/*DONT user padding: x x x x becuase wiki parser sets padding-left which will override */;
+	padding-right: 3px;
+	padding-top: 3px;
+	padding-bottom: 1px;
+	/*font-family: arial, serif, Times;*/
+	/*font-size: 12px;*/
+	font-weight: normal;
+	border-bottom: 1px solid #d3d3d3;
+}
+.tocItems:hover {
+	background-color: #eee;
+}
+.tocItems img {
+	border: 0px;
+}
+.tocTitle {
+	text-align: center;
+	margin-left: 0px;
+	margin-top: 3px;
+	margin-right: 0px;
+	color: black;
+	/*background: url('/mrcore/skins/default/mrticles/bg-diagonals-light.png') top left repeat;*/
+	height: 18px;
+	padding: 3px;
+}
+
+/* *********************************** */
+/* Text_Wiki Headings                  */
+/* *********************************** */
+.heading_top {
+	background: url('../images/top_icon.gif') top right no-repeat;
+	width: 16px;
+	height: 16px;
+	float: right;
+	margin-top: -21px;
+}
+.header_toggle {
+    font-family: monospace;
+    font-size: 10px;
+    font-weight: normal;
+    color: #0645ad;
+    margin-left: 8px;
+	padding-right: 30px;
+	cursor: pointer;
+}
+.header_toggle:hover {
+	text-decoration: underline;
+}
+.header_expand, .header_collapse {
+    font-family: monospace;
+    font-size: 10px;
+    font-weight: normal;
+    margin-top: 2px;
+    margin-left: 2px;
+    float: right;
+}
+.header_collapse {
+    margin-right: 20px;
+}
+.header_expand a, .header_collapse a {
+    color: #888;
+}
+.header1_content {
+    padding: 0px 0px 5px 15px;
+    border: 1px solid #eeeeee;
+}
+.header2_content {
+    padding: 0px 0px 5px 15px;
+    border: 1px solid #eeeeee;
+}
+.header3_content {
+    padding: 0px 0px 5px 15px;
+    border: 1px solid #eeeeee;
+}
+.header4_content {
+    padding: 0px 0px 5px 15px;
+    border: 1px solid #eeeeee;
+}
+.header5_content {
+    padding: 0px 0px 5px 15px;
+    border: 1px solid #eeeeee;
+}
+.header6_content {
+    padding: 0px 0px 5px 15px;
+    border: 1px solid #eeeeee;
+}
+
+
+.heading1, h1 {
+	/*background: url('/mrcore/skins/default/mrticles/bg-diagonals-blue.png') top left repeat;*/
+	/*height: 30px;*/
+	border-bottom: 1px solid #C9D7F1;
+	padding: 0px;
+	padding-left: 1px;
+	margin: 0px;
+	margin-top: 26px;
+	/*margin-bottom: 5px;*/
+	/*color: #105289;*/
+	color: black;
+	/*page-break-before: always;*/
+	/*border: 1px solid #aaaaaa;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;*/
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 22px;
+}
+#toc0 {
+	margin-top: 0px;
+}
+.heading2, h2 {
+	/*background: url('/mrcore/skins/default/mrticles/bg-diagonals-dark.png') top left repeat;*/
+	/*height: 25px;*/
+	padding: 0px;
+	padding-left: 1px;
+	margin: 0px;
+	margin-top: 24px;
+	color: #333;
+	/*page-break-before: always;*/
+	/*border: 1px solid #aaaaaa;*/
+	border-bottom: 1px solid #C9D7F1;
+	/*border-right: 1px solid #666666;*/
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 22px;
+}
+.heading3, h3 {
+	/*background: url('/mrcore/skins/default/mrticles/bg-diagonals-light.png') top left repeat;*/
+	/*height: 25px;*/
+	/*border-bottom: 1px #cccccc solid;*/
+	padding: 0px;
+	padding-top: 3px;
+	margin: 0px;
+	margin-top: 22px;
+	color: #666;
+    border-bottom: 1px solid #C9D7F1;
+	/*border: 1px solid #cccccc;
+	border-bottom: 1px solid #888888;
+	border-right: 1px solid #888888;*/
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 20px;
+}
+.heading4, h4 {
+	border-bottom: 1px solid #cccccc;
+	padding: 0px;
+	padding-top: 5px;
+	margin: 0px;
+	margin-top: 20px;
+	color: #777;
+	font-size: 14px;
+	font-weight: bold;
+}
+.heading5, h5 {
+    border-bottom: 1px solid #dddddd;
+	padding: 0px;
+	padding-top: 5px;
+	margin: 0px;
+	margin-top: 18px;
+	color: #888;
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: bold;
+}
+.heading6, h6 {
+    border-bottom: 1px solid #eeeeee;
+	/*border-bottom: 1px #888888 solid;*/
+	color: #999;
+	padding: 0px;
+	margin: 0px;
+	text-decoration: none;
+	margin-top: 16px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+/* *********************************** */
+/* Text_Wiki BlockQuote and Code (pre) */
+/* *********************************** */
+.blockQuote {
+	margin: 5px 0px 5px 0px;
+	padding: 5px;
+	padding-left: 26px;
+	background: url('../images/important.png') 3px center no-repeat;
+	background-color: #FFFFCC;
+	border: 1px solid #DDDDFF;
+	white-space: wrap;
+	/*list-style-type: none;
+	list-style-image: none;*/
+	color: #000000;
+}
+.code_outer, .textbox_outer {
+	margin-top: 5px;
+	margin-right: 5px;
+	border: 1px solid #bbb;
+	background-color: #eee;
+}
+.code_header, .textbox_header {
+	padding-left: 5px;
+	font-weight: bold;
+	color: #666;
+	font-size: 10px;
+}
+.code, pre, .textbox_outer textarea {
+	font-family: monospace;
+	border: 1px solid #ccc;
+	margin: 0px 0px 0px 3px;
+}
+.code, pre {
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	background-color: #f8f8f8;
+	border-bottom: 0px;
+	border-right: 0px;
+	/*color: darkblue;*/
+	color: darkgreen;
+	padding: 5px;
+}
+pre {
+	border: 1px solid #ccc;
+}
+.code_outer pre {
+	border-right: 0px;
+	border-bottom: 0px;
+}
+.textbox_outer textarea {
+	width: 99%;
+}
+
+/* *********************************** */
+/* Text_Wiki Tables                    */
+/* *********************************** */
+.table_table {
+	margin-top: 5px;
+	margin-bottom: 5px;
+    border-left: 1px solid #bbb;
+    border-top: 1px solid #bbb;
+    /*box-shadow: 2px 2px 4px #ccc;*/
+}
+.table_table thead tr th, .table_th {
+    border-right: 1px solid #bbb;
+    border-bottom: 1px solid #666;
+    background-color: #f6f6f6;
+    padding: 4px;
+    text-align: center;
+}
+.table_table tbody td, .table_td {
+    min-width: 40px;
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.table_tr_odd {
+	background-color: #ffffff;
+}
+.table_tr_even {
+	background-color: #f6f6f6;
+}
+.table_tr_odd:hover, .table_tr_even:hover {
+	background-color: #eef0f9;
+}
+
+
+
+/* *********************************** */
+/* Text_Wiki Other Misc stuff          */
+/* *********************************** */
+p {
+	/*margin: 15px 0px 5px 0px;
+	padding: 0px;*/
+	/*-webkit-margin-before: 0em;*/
+}
+ul, ol {
+	padding-left: 30px;
+	margin: -4px 0px 0px 0px;
+}
+li {
+	margin: 3px 0px 0px 0px;
+	padding: 0px;
+
+}
+.image {
+
+}
+
+.image_link {
+
+}
+tt {
+	/*color: #072b61;*/
+	color: green;
+	font-weight: bold;
+	/*border: 1px solid #f0f0f0;*/
+	/*background-color: #f8f8f8;*/
+}
+li {
+	padding-top: 5px;
+}
+.auth {
+    margin-left: -2px;
+    padding-left: 2px;
+    /*margin-left: -16px;*/
+	/*padding-left: 15px;*/
+	border-left: 1px solid #FF9900;
+}
+.auth_inline {
+    display: inline;
+	background-color: #F0F0F0;
+	margin-left: 1px;
+	padding-left: 2px;
+	border-left: 1px solid #FF9900;
+}
+.private {
+    margin-left: -2px;
+    padding-left: 2px;    
+    /*margin-left: -16px;*/
+	/*padding-left: 15px;*/
+	border-left: 1px solid #FF0000;
+    
+}
+.private_inline {
+    display: inline;
+	background-color: #F0F0F0;
+	margin-left: 1px;
+	padding-left: 2px;
+	border-left: 1px solid #FF0000;
+}
+.info {
+    margin-top: -17px;
+    float: right;
+    /*width: 250px;*/
+    margin-left: 5px;
+	margin-right: -5px;
+    margin-bottom: 5px;
+    font-size: 11px;
+	min-width: 200px;
+	max-width: 300px; /* set same as .toc width */
+}
+.box {
+	padding: 5px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0dfdf;
+    border: 1px solid #ccc;
+	white-space: wrap;
+    /*margin-bottom: 5px;*/
+}
+.info .box {
+    border: 1px solid #C9D7F1;
+    border: 1px solid #ccc;
+	box-shadow: 1px 1px 3px #ccc;
+    /*background-image: url('../images/form_bg.jpg');*/
+    background-repeat: repeat-x;
+    background-position: top;
+    background-color: white;
+    font-size: 11px;
+}
+.info .box table {
+	width: 100%;
+	font-size: 11px;
+}
+.box_left {
+    padding-right: 5px;
+    vertical-align: middle;
+    width: auto;
+    height: 100%;
+}
+.box_right {
+}
+.highlight {
+}

@@ -1,0 +1,66 @@
+/* Search Layout */
+/* Prefix=u */
+/* o=outer, h=header, b=body, c=content, t=table, x=text */
+/* l=logo, btn=button */
+/* a=href */
+#uc {
+    margin: 0 auto;
+    box-shadow: 0 2px 5px 2px #ccc;
+    border: 1px solid #aaa;
+    border-top: 0px;
+    max-width: 1200px;
+    background-color: #fff;
+}
+#ub {
+    padding: 15px;
+}
+#subnavc {
+    margin-bottom: 10px;
+}
+.subnava {
+    margin-right: 20px;
+}
+#users_table {
+    border-spacing: 1px;
+}
+#users_table_compact {
+    font-size: 10px;
+    border-spacing: 1px;
+}
+#users_table th, #users_table_compact th {
+    padding: 2px;
+    text-align: right;
+}
+#users_table td {
+    padding: 1px;
+}
+#users_table_compact td {
+    padding: 2px;
+}
+.users_row, .users_compact_row {
+    margin-bottom: 20px;
+    /*background-color: #E1EBF2;
+    border: 1px solid #C9D7F1;*/
+	/*background-color: #eeeeee;*/
+	border: 1px solid #C9D7F1;
+	/*background-color: #f6f6f6;*/
+}
+.users_row_alt, .users_compact_row_alt {
+    margin-bottom: 20px;
+    /*background-color: #ECF3F7;
+    border: 1px solid #C9D7F1;*/
+	border: 1px solid #C9D7F1;
+	/*background-color: #f6f6f6;*/
+}
+.users_row:hover, .users_row_alt:hover, .users_compact_row:hover, .users_compact_row_alt:hover {
+    /*background-color: #efefef;*/
+    border: 1px solid #C9D7F1;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    background: #ffffff url('../../images/form_bg.jpg') top left repeat-x;
+}
+#users_table a[href ^="mailto:"], .aSummary a[href ^="mailto:"] {
+	background: url('../../images/mailto.gif') center right no-repeat;
+	padding-right: 18px;
+}

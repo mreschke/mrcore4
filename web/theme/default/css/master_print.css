@@ -1,0 +1,56 @@
+/* Master Overrides */
+#mh {
+    display: none;
+}
+#topic_recent_div {
+    display: none;
+}
+#mlinks { /* temp delete me when you figure out the new menu system */
+    display: none;
+}
+
+
+
+/* Wiki Overrides */
+.noprint {
+    display: none;
+}
+.header_toggle, .header_expand, .header_collapse, .heading_tops {
+    display: none;
+}
+/* Expand All Header Contents */
+/* not work because style is in the html which overrides this */
+/*.header1_content {
+    display: block;
+}*/
+
+
+
+/* Topic Overrides */
+#tbh {
+    box-shadow: 0 0 0 0 #ffffff;
+    border: 0px;
+    border-bottom: 1px solid #aaa;
+
+}
+#tm {
+    display: none;
+}
+#tbt {
+    box-shadow: 0 0 0 0 #ffffff;
+    border: 0px;
+    border-top: 1px solid #aaa;
+}
+.tcomadd {
+    display: none;   
+}
+#lock_message {
+    display: none;
+}
+
+
+
+/* Search Overrides */
+.search_badge_item {
+    display: none;
+}

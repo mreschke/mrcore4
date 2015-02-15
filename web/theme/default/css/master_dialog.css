@@ -1,0 +1,272 @@
+/* Master Dialog */
+/* Prefix=md
+/* o=outer, h=header, b=body, c=content, t=table, x=text, f=fade */
+/*.m_dialog_fade {*/
+.m_dialog_fade {
+    /* This does NOT work with file upload popup with master.css #m_outer_div opacity is enabled :( */
+    position: fixed;
+    background-color: #000000;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 9997;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
+.m_dialog {
+    display: none;
+    position: fixed;
+    top: 100px;
+    bottom: 100px;
+    left: 100px;
+    right: 100px;
+    background-color: white;
+    /*border: 1px solid #51A4AF;*/
+    border: 1px solid #666666;
+    color: #666666;
+    z-index: 9999;
+    padding: 5px;
+}
+.m_dialog_close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}
+.m_dialog_content {
+    position: fixed;
+    top: 127px;
+    bottom: 105px;
+    left: 105px;
+    right: 105px;
+    overflow: auto;
+    padding: 5px;
+}
+.m_dialog_title {
+    font-weight: bold;
+    font-size: 16px;
+    height: 20px;
+    border-bottom: 1px solid #cccccc;
+    color: #0645ad;
+    vertical-align: middle;
+}
+
+
+
+/* ***** MASTER ERROR ***** */
+#m_error_div {
+    position: fixed;
+    width: 100%;
+    background-color: #808080;
+    border: 1px solid black;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 9997;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
+#m_error_placement {
+    position: fixed;
+    top: 20%;
+    height: 100%;
+    width: 100%;
+    filter:alpha(opacity=80);
+    -moz-opacity:0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    z-index: 9998;
+}
+#m_error_box {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #333333;
+    border: 1px solid red;
+    color: #ffffff;
+    z-index: 9999;
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+}
+#m_error_image {
+    width: 80px;
+}
+#m_error_label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+
+/* ***** MASTER DEBUG ***** */
+.m_debug_header {
+    color: #8DC342;
+        font-weight: bold;
+    font-size: 14px;
+}
+.m_debug_location {
+    color: #999999;
+    font-size: 10px;
+    
+}
+.m_debug_data {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.m_debug_data_object_header {
+    font-weight: bold;
+    font-size: 14px;
+    color: #51A4AF;
+}
+
+
+/* ***** MASTER DEBUG ERROR (not same as one-time popup error) ***** */
+.m_debug_error_header {
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+}
+.m_debug_error_location {
+    color: #999999;
+    font-size: 10px;
+    
+}
+.m_debug_error_data {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+
+
+
+
+/* ***** MASTER ERROR ***** */
+/*
+#m_error_div {
+    position: fixed;
+    width: 100%;
+    background-color: #808080;
+    border: 1px solid black;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 9997;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
+#m_error_placement {
+    position: fixed;
+    top: 20%;
+    height: 100%;
+    width: 100%;
+    filter:alpha(opacity=80);
+    -moz-opacity:0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    z-index: 9998;
+}
+#m_error_box {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #333333;
+    border: 2px solid #cc2000;
+    color: #ffffff;
+    z-index: 9999;
+    width: 500px;
+    height: 300px;
+    padding: 5px;
+}
+#m_error_label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+*/
+
+
+
+/* ***** MASTER DEBUG ***** */
+/*
+#m_debug_div {
+    display: none;
+    position: fixed;
+    width: 100%;
+    background-color: #000000;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 9997;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
+#m_debug_placement {
+    display: none;
+    position: fixed;
+    top: 10%;
+    height: 100%;
+    width: 100%;
+    filter:alpha(opacity=85);
+    -moz-opacity:0.85;
+    -khtml-opacity: 0.85;
+    opacity: 0.85;
+    z-index: 9998;
+}
+#m_debug_box {
+    position: fixed;
+    top: 50px;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    background-color: #333333;
+    border: 1px solid #6B90DA;
+    color: #ffffff;
+    z-index: 9999;
+    padding: 5px;
+}
+#m_debug_content {
+    position: fixed;
+    top: 100px;
+    bottom: 60px;
+    left: 55px;
+    right: 55px;
+    overflow: auto;
+    padding: 5px;
+}
+#m_debug_title {
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 2px;
+}
+.m_debug_header {
+    color: green;
+    font-weight: bold;
+    font-size: 14px;
+}
+.m_debug_location {
+    color: #999999;
+    font-size: 10px;
+    
+}
+.m_debug_data {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.m_debug_data_object_header {
+    font-weight: bold;
+    font-size: 14px;
+    color: #51A4AF;
+}
+*/

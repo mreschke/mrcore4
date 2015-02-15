@@ -1,0 +1,230 @@
+/* Files Override */
+#files_context_menu, #folder_context_menu {
+    display: none;
+}
+
+/* Edit Layout */
+/* Prefix=e */
+/* o=outer, h=header, b=body, c=content, t=table, x=text */
+/* l=logo, u=user, s=search, btn=button */
+/* a=href */
+#ec {
+    margin: 0 auto;
+    box-shadow: 0 2px 5px 2px #ccc;
+    border: 1px solid #aaa;
+    border-top: 0px;
+    max-width: 1200px;
+    background-color: #fff;
+}
+#eb {
+    padding: 15px;
+}
+#edit_title_text {
+    width: 400px;
+}
+/*This is the actual wysiwyg textarea*/
+#edit_body_textarea {
+    width: 100%;
+    margin: 0px;
+    font-family: monospace;
+	line-height: 150%;
+	padding: 0px;
+    height: 300px; /* Only for Android since other OS will auto-resize textarea */
+    white-space: pre;
+    word-wrap: break-word;
+    overflow-x: auto;
+}
+.wysiwyg iframe {
+    width: 100%;
+}
+#edit_badges_select {
+    width: 200px;
+    height: 250px;
+}
+#edit_tags_select {
+    width: 200px;
+    height: 250px;
+}
+#edit_tag_text_div {
+    width: 202px;
+}
+#edit_tag_text {
+    width: 200px;
+}
+#edit_perm_div {
+    /*width: 100%;*/
+    /*width: 300px;*/
+    /*max-height: 320px;
+    overflow: auto;*/
+}
+.edit_perm_group_name {
+    font-weight: bold;
+}
+.edit_perm_short {
+    
+}
+.edit_buttons {
+    margin-top: 10px;
+}
+#edit_delete_text {
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.edit_delete_button {
+    margin-right: 20px;
+}
+#edit_created_on_text, #edit_updated_on_text {
+    width: 200px;    
+}
+#edit_created_by_select, #edit_updated_by_select {
+    width: 203px;
+    height: 24px;
+
+}
+#edit_tokenize_badge:hover {
+    border: 0px;
+}
+
+
+/* Input Autocomplete Override */
+.token-input-input-token input[type="text"]:hover, .token-input-input-token input[type="text"]:focus {
+    border: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ***** WYSIWYG Editor CSS ***** */
+div.toolbar {
+    width: 100%;
+    height: 26px;
+    /*background-color: #ccc;
+    background-color: #E5ECF9;
+    border-top: 1px solid #6B90DA;
+    border-bottom: 1px solid #6B90DA;*/
+    border: 1px solid #C9D7F1;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    background-image: url('../images/form_bg.jpg');
+    background-repeat: repeat-x;
+    background-position: top;    
+
+}
+div.toolbar a, div.toolbar span {
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    cursor: pointer;
+    text-indent: -9999px;
+    background-color: #E5ECF9;
+    color: #000;
+    background-position: center center;
+    border: 1px solid #ccc;
+}
+div.toolbar a:hover, div.toolbar span:hover {
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+}
+div.toolbar div.divider {
+    float: left;
+    width: 0;
+    height: 20px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #333;
+    margin: 2px;
+}
+/*div.toolbar a.toolbarButton2, div.toolbar span.toolbarButton2 { background-image: url(../images/strong.png); }
+div.toolbar a.toolbarButton3, div.toolbar span.toolbarButton3 { background-image: url(../images/em.png); }
+div.toolbar a.toolbarButton4, div.toolbar span.toolbarButton4 { background-image: url(../images/link.png); }
+div.toolbar a.toolbarButton5, div.toolbar span.toolbarButton5 { background-image: url(../images/link.png); }
+div.toolbar a.toolbarButton6, div.toolbar span.toolbarButton6 { background-image: url(../images/unlink.png); }
+div.toolbar a.toolbarButton7, div.toolbar span.toolbarButton7 { background-image: url(../images/img.png); }
+div.toolbar a.toolbarButton8, div.toolbar span.toolbarButton8 { background-image: url(../images/hr.png); }
+div.toolbar a.toolbarButton10, div.toolbar span.toolbarButton10 { background-image: url(../images/h1.png); }
+div.toolbar a.toolbarButton11, div.toolbar span.toolbarButton11 { background-image: url(../images/h2.png); }
+div.toolbar a.toolbarButton12, div.toolbar span.toolbarButton12 { background-image: url(../images/h3.png); }
+div.toolbar a.toolbarButton13, div.toolbar span.toolbarButton13 { background-image: url(../images/h3.png); }
+div.toolbar a.toolbarButton14, div.toolbar span.toolbarButton14 { background-image: url(../images/h3.png); }
+div.toolbar a.toolbarButton15, div.toolbar span.toolbarButton15 { background-image: url(../images/h3.png); }
+div.toolbar a.toolbarButton16, div.toolbar span.toolbarButton16 { background-image: url(../images/p.png); }
+div.toolbar a.toolbarButton17, div.toolbar span.toolbarButton17 { background-image: url(../images/pre.png); }
+div.toolbar a.toolbarButton18, div.toolbar span.toolbarButton18 { background-image: url(../images/ul.png); }
+div.toolbar a.toolbarButton19, div.toolbar span.toolbarButton19 { background-image: url(../images/ol.png); }*/
+
+div.toolbar a.toolbarButton0, div.toolbar span.toolbarButton0 { /* Toggle */
+    height: 16px; width: 65px; text-indent: 0; padding: 2px;text-align: center;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* 1 div */
+div.toolbar a.toolbarButton2, div.toolbar span.toolbarButton2 { /* h1 */
+    height: 16px; width: auto; text-indent: 0; padding: 2px;
+    color: #000;
+}div.toolbar a.toolbarButton3, div.toolbar span.toolbarButton3 { /* h2 */
+    height: 16px; width: auto; text-indent: 0; padding: 2px;
+    color: #000;
+}div.toolbar a.toolbarButton4, div.toolbar span.toolbarButton4 { /* h3 */
+    height: 16px; width: auto; text-indent: 0; padding: 2px;
+    color: #000;
+}div.toolbar a.toolbarButton5, div.toolbar span.toolbarButton5 { /* h4 */
+    height: 16px; width: auto; text-indent: 0; padding: 2px;
+    color: #000;
+}div.toolbar a.toolbarButton6, div.toolbar span.toolbarButton6 { /* h5 */
+    height: 16px; width: auto; text-indent: 0; padding: 2px;
+    color: #000;
+}div.toolbar a.toolbarButton7, div.toolbar span.toolbarButton7 { /* h6 */
+    height: 16px; width: auto; text-indent: 0; padding: 2px;
+    color: #000;
+/* 8 div */
+}div.toolbar a.toolbarButton9, div.toolbar span.toolbarButton9 { /* hr */
+    height: 16px; width: 15px; text-indent: 0; padding: 2px; text-align: center;
+    color: #000;
+}
+div.toolbar a.toolbarButton10, div.toolbar span.toolbarButton10 { /* bold */
+    height: 16px; width: 15px; text-indent: 0; padding: 2px; text-align: center;
+    color: #000;
+    font-weight: bold;
+}div.toolbar a.toolbarButton11, div.toolbar span.toolbarButton11 { /* italic */
+    height: 16px; width: 15px; text-indent: 0; padding: 2px; text-align: center;
+    color: #000;
+    font-style: italic;
+}div.toolbar a.toolbarButton12, div.toolbar span.toolbarButton12 { /* underline */
+    height: 16px; width: 15px; text-indent: 0; padding: 2px; text-align: center;
+    color: #000;
+    text-decoration: underline;
+}div.toolbar a.toolbarButton13, div.toolbar span.toolbarButton13 { /* strike through */
+    height: 16px; width: 15px; text-indent: 0; padding: 2px; text-align: center;
+    color: #000;
+    text-decoration: line-through;
+}div.toolbar a.toolbarButton14, div.toolbar span.toolbarButton14 { /* superscript */
+    height: 16px; width: 15px; text-indent: 0; padding: 2px; text-align: center;
+    color: #000;
+    font-size: 9px;
+}div.toolbar a.toolbarButton15, div.toolbar span.toolbarButton15 { /* subscript */
+    height: 10px; width: 15px; text-indent: 0; padding: 2px; text-align: center;
+    color: #000;
+    font-size: 9px;
+    padding-top: 8px;
+}div.toolbar a.toolbarButton16, div.toolbar span.toolbarButton16 { /* color */
+    height: 16px; width: 15px; text-indent: 0; padding: 2px; text-align: center;
+    color: red;
+}
+/* 17 div */
+}div.toolbar a.toolbarButton18, div.toolbar span.toolbarButton18 { /* xformat */
+    height: 16px; width: auto; text-indent: 0; padding: 2px;
+    color: #666;
+}

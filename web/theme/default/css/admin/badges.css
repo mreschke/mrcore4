@@ -1,0 +1,56 @@
+/* Search Layout */
+/* Prefix=b */
+/* o=outer, h=header, b=body, c=content, t=table, x=text */
+/* l=logo, btn=button */
+/* a=href */
+#bc {
+    margin: 0 auto;
+    box-shadow: 0 2px 5px 2px #ccc;
+    border: 1px solid #aaa;
+    border-top: 0px;
+    max-width: 1200px;
+    background-color: #fff;
+}
+#bb {
+    padding: 15px;
+}
+#subnavc {
+    margin-bottom: 10px;
+}
+.subnava {
+    margin-right: 20px;
+}
+#badges_table {
+    margin-left: 10px;
+}
+#badges_table th {
+    padding: 5px;
+}
+#badges_table td {
+    padding: 5px;
+}
+.badges_row {
+    margin-bottom: 10px;
+    /*background-color: #E1EBF2;
+    border: 1px solid #C9D7F1;*/
+    border: 1px solid #C9D7F1;
+}
+.badges_row_alt {
+    margin-bottom: 10px;
+    /*background-color: #ECF3F7;
+    border: 1px solid #C9D7F1;*/
+    border: 1px solid #C9D7F1;
+}
+.badges_row:hover, .badges_row_alt:hover {
+    border: 1px solid #C9D7F1;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    background: #ffffff url('../images/form_bg.jpg') top left repeat-x;
+}
+.badges_badge_txt {
+    
+}
+#badges_upload_div {
+    display: none;
+}

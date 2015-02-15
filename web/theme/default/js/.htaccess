@@ -1,0 +1,5 @@
+#Expires Caching
+<IfModule mod_expires.c>
+	ExpiresActive On
+	ExpiresDefault "access 1 year"
+</IfModule>
