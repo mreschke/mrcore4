@@ -5,7 +5,7 @@ A Wiki/CMS built with an mreschke custom PHP framework.
 # Install
 
 	cd /var/www
-	git clone https://github.com/mreschke/mrcore.git
+	git clone https://github.com/mreschke/mrcore4
 
 	# Config
 	cd /var/www/mrcore4/config
@@ -30,6 +30,6 @@ A Wiki/CMS built with an mreschke custom PHP framework.
 
 
 
-### License
+# License
 
 The mrcore4 framework is open-sourced software licensed under the [MIT license](http://mreschke.com/license/mit)
